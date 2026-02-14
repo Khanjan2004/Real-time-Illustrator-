@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+body { @apply bg-bg text-white min-h-screen; }
+.panel { @apply bg-card/80 border border-white/10 rounded-xl p-4; }
