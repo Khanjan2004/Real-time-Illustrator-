@@ -20,7 +20,7 @@ export default function ResultsPage() {
       <ResultsDashboard session={session} />
       <div className="flex gap-2">
         <Link className="px-3 py-2 rounded bg-accent text-black" href="/">Retry</Link>
-        <button onClick={() => navigator.clipboard.writeText(`I scored ${session.netWpm.toFixed(0)} WPM!`)} className="px-3 py-2 rounded border border-white/20">Share</button>
+        <button onClick={async () => { try { await navigator.clipboard.writeText(`I scored ${session.netWpm.toFixed(0)} WPM!`) } catch {} }} className="px-3 py-2 rounded border border-white/20">Share</button>
       </div>
     </div>
   )

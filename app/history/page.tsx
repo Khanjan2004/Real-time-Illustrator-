@@ -26,7 +26,7 @@ export default function HistoryPage() {
         <select className="bg-black/30 rounded p-2" value={modeFilter} onChange={(e) => setModeFilter(e.target.value)}>
           <option value="all">All</option>
           <option value="time">Time</option><option value="words">Words</option><option value="code">Code</option>
-          <option value="precision">Precision</option><option value="meditation">Meditation</option><option value="focus">Focus</option>
+          <option value="custom">Custom</option><option value="precision">Precision</option><option value="meditation">Meditation</option><option value="focus">Focus</option>
         </select>
         <span className="text-sm text-white/70">Best: {best.toFixed(1)} | Avg: {avg.toFixed(1)}</span>
       </div>
